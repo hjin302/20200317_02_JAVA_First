@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
@@ -18,11 +18,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="메세지 입력"/>
+
+
             <Button
                 android:id="@+id/inputBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="입력"/>
+
+            <EditText
+                android:id="@+id/pwTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="비밀번호 입력" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="로그인"/>
 
             <TextView
                 android:id="@+id/appearTxt"
