@@ -21,8 +21,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
 
+        binding.inputBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String input = binding.inputTxt.getText().toString();
 
+                binding.appearTxt.setText(input);
+                binding.inputTxt.setText("");
+            }
+        });
     }
 }
